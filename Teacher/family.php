@@ -1,0 +1,1 @@
+<?php include "../check_login.php"; if ($role != "teacher") { header("location: ../login.php"); exit(); } header("location: profile.php"); exit(); ?>

@@ -1,0 +1,19 @@
+UMS Railway Deployment - Simple Setup
+
+1. Upload this project to a GitHub repository.
+2. In Railway, create a New Project.
+3. Choose GitHub Repository and select this repository.
+4. Add a MySQL database to the same Railway project.
+5. Railway provides MYSQLHOST, MYSQLPORT, MYSQLUSER, MYSQLPASSWORD and MYSQLDATABASE to connected services.
+6. Make sure the MySQL service is connected/available to the PHP service.
+7. Deploy the PHP service.
+8. Open the MySQL service's Database View and run/import database.sql.
+9. Open the generated Railway domain.
+10. Login with:
+   Email: admin@ums.com
+   Password: admin123
+
+Local XAMPP still works. If Railway variables are not present, connection.php falls back to localhost/root/ums.
+
+Important:
+Railway service files are not permanent between deployments. Profile pictures uploaded by users are stored in uploads/profile_pictures. For permanent uploads, attach a Railway Volume to the application and mount it at /var/www/html/uploads.
