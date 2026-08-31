@@ -29,7 +29,8 @@ require_once __DIR__ . '/../connection.php';
 
 $apiToken = getenv('UMS_API_TOKEN');
 
-$authorization = $_SERVER['HTTP_AUTHORIZATION'] ?? '';
+$headers = getallheaders();
+$authorization = $headers['Authorization'] ?? '';
 $providedToken = '';
 
 if (preg_match('/^Bearer\s+(.+)$/i', trim($authorization), $matches)) {
