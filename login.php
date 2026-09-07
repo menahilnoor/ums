@@ -87,6 +87,10 @@ if (isset($_POST["login-btn"])) {
 <html>
 <head>
     <title>Login | UMS</title>
+    <meta property="og:title" content="University Management System (UMS)">
+<meta property="og:description" content="Web-based University Management System developed using PHP, MySQL, REST APIs and API-based authentication.">
+<meta property="og:url" content="https://ums-production-34b4.up.railway.app/">
+<meta property="og:type" content="website">
     <link rel="icon" href="images/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
